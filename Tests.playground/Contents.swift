@@ -24,3 +24,15 @@ ages.insert(44, at: 0) //Adicionar um elemento em um index expecífico.
 ages.reverse()//Colocar o array em ordem inversa.
 ages.shuffle()//Colocar o array em uma ordem aleatória.
 ages.sort()//Colocar o array em orderm númériuca. 
+
+//Set
+var ages2 = [18, 33, 55, 17, 94, 26, 17]
+// var agesSet: Set<Int> = [] Declaração de set vazio.
+var ageSet = Set(ages2)
+print(ageSet)
+ageSet.contains(17)
+ageSet.insert(101)
+ageSet.contains(101)
+print(ageSet)
+
+//Dicionários
