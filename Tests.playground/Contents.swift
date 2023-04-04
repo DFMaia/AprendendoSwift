@@ -36,3 +36,11 @@ ageSet.contains(101)
 print(ageSet)
 
 //Dicionários
+//let devices: [String: String] = [:]   É tipo um map so que vazio
+let devices: [String: String] = [
+    "phone": "iPhone x",
+    "laptop": "2016 MacBook Pro ",
+    "tablet": "2016 iPad Pro",
+    "desktop": "2017 iMac Pro "
+]
+devices["laptop"]
