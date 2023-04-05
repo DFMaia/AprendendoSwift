@@ -44,3 +44,19 @@ let devices: [String: String] = [
     "desktop": "2017 iMac Pro "
 ]
 devices["laptop"]
+
+//Funções
+func printInstructorsName(name: String){
+    print(name)
+}
+
+printInstructorsName(name: "Diego Maia")
+
+func add(firstNumber: Int, to secondNumber: Int ) -> Int{
+    let sum = firstNumber + secondNumber;
+    return sum;
+}
+
+print(add(firstNumber: 35, to: 35))
+
+
