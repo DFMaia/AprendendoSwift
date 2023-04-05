@@ -7,8 +7,11 @@ var numberDouble: Double = 0.123456789000000
 var name: String = "Diego"
 var isDarkModeOne: Bool = true
 
+print("__________________________________________________________________________________________________________________")
+
 //Constantes
 let differentName: String = "Diego Maia"
+print("__________________________________________________________________________________________________________________")
 
 //Arrays
 //var ages: [Int] = []
@@ -24,6 +27,7 @@ ages.insert(44, at: 0) //Adicionar um elemento em um index expecífico.
 ages.reverse()//Colocar o array em ordem inversa.
 ages.shuffle()//Colocar o array em uma ordem aleatória.
 ages.sort()//Colocar o array em orderm númériuca. 
+print("__________________________________________________________________________________________________________________")
 
 //Set
 var ages2 = [18, 33, 55, 17, 94, 26, 17]
@@ -34,6 +38,7 @@ ageSet.contains(17)
 ageSet.insert(101)
 ageSet.contains(101)
 print(ageSet)
+print("__________________________________________________________________________________________________________________")
 
 //Dicionários
 //let devices: [String: String] = [:]   É tipo um map so que vazio
@@ -44,6 +49,7 @@ let devices: [String: String] = [
     "desktop": "2017 iMac Pro "
 ]
 devices["laptop"]
+print("__________________________________________________________________________________________________________________")
 
 //Funções
 func printInstructorsName(name: String){
@@ -58,6 +64,7 @@ func add(firstNumber: Int, to secondNumber: Int ) -> Int{
 }
 
 print(add(firstNumber: 35, to: 35))
+print("__________________________________________________________________________________________________________________")
 
 // if else
 
@@ -88,5 +95,32 @@ if highScore > 500 {
 }else{
     print("Yikes")
 }
+print("__________________________________________________________________________________________________________________")
 
+// For loops
+let allStars = ["James", "Davis", "Hardens", "Donic", "Leonard"]
+for player  in allStars {
+    print(player)
+}
 
+for player  in allStars where player == "Hardens"{
+    print(player)
+}
+
+for i in 0...25 {
+    print(i)
+}
+
+for i in 0..<25 {
+    print(i)
+}
+
+var randomInts: [Int] = []
+
+for _ in 0..<25 {
+    let randomNumber = Int.random(in: 0...100)
+    randomInts.append(randomNumber)
+}
+
+print(randomInts)
+print("__________________________________________________________________________________________________________________")
