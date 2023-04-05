@@ -59,4 +59,34 @@ func add(firstNumber: Int, to secondNumber: Int ) -> Int{
 
 print(add(firstNumber: 35, to: 35))
 
+// if else
+
+var isDarkMode: Bool = true
+
+if isDarkMode{
+    print("That is how it should be")
+}else{
+    print("you are a psyco")
+}
+
+var myHighScore = 444
+var yourHighScore = 555
+
+if myHighScore > yourHighScore{
+    print("I win")
+}else{
+    print ("You win")
+}
+
+var highScore = 1000
+if highScore > 500 {
+    print("You are the best")
+}else if highScore > 250{
+    print("You are average")
+}else if highScore > 100{
+    print("You need improvement")
+}else{
+    print("Yikes")
+}
+
 
