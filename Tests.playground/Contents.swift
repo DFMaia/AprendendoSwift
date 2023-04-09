@@ -1,5 +1,9 @@
 import UIKit
 
+func printSeparator(){
+    print("__________________________________________________________________________________________________________________")
+}
+
 //Tipos de variáveis
 var number: Int = 0
 var numberFloat: Float = 0.123456
@@ -7,11 +11,11 @@ var numberDouble: Double = 0.123456789000000
 var name: String = "Diego"
 var isDarkModeOne: Bool = true
 
-print("__________________________________________________________________________________________________________________")
+printSeparator()
 
 //Constantes
 let differentName: String = "Diego Maia"
-print("__________________________________________________________________________________________________________________")
+printSeparator()
 
 //Arrays
 //var ages: [Int] = []
@@ -27,7 +31,7 @@ ages.insert(44, at: 0) //Adicionar um elemento em um index expecífico.
 ages.reverse()//Colocar o array em ordem inversa.
 ages.shuffle()//Colocar o array em uma ordem aleatória.
 ages.sort()//Colocar o array em orderm númériuca. 
-print("__________________________________________________________________________________________________________________")
+printSeparator()
 
 //Set
 var ages2 = [18, 33, 55, 17, 94, 26, 17]
@@ -38,7 +42,7 @@ ageSet.contains(17)
 ageSet.insert(101)
 ageSet.contains(101)
 print(ageSet)
-print("__________________________________________________________________________________________________________________")
+printSeparator()
 
 //Dicionários
 //let devices: [String: String] = [:]   É tipo um map so que vazio
@@ -49,7 +53,7 @@ let devices: [String: String] = [
     "desktop": "2017 iMac Pro "
 ]
 devices["laptop"]
-print("__________________________________________________________________________________________________________________")
+printSeparator()
 
 //Funções
 func printInstructorsName(name: String){
@@ -64,7 +68,7 @@ func add(firstNumber: Int, to secondNumber: Int ) -> Int{
 }
 
 print(add(firstNumber: 35, to: 35))
-print("__________________________________________________________________________________________________________________")
+printSeparator()
 
 // if else
 
@@ -95,7 +99,7 @@ if highScore > 500 {
 }else{
     print("Yikes")
 }
-print("__________________________________________________________________________________________________________________")
+printSeparator()
 
 // For loops
 let allStars = ["James", "Davis", "Hardens", "Donic", "Leonard"]
@@ -123,7 +127,7 @@ for _ in 0..<25 {
 }
 
 print(randomInts)
-print("__________________________________________________________________________________________________________________")
+printSeparator()
 
 //Enum
 
@@ -140,6 +144,41 @@ func getSeanOpnion(on phone: Phone){
 
 getSeanOpnion(on: .iPhone11Pro)
 
-print("__________________________________________________________________________________________________________________")
+printSeparator()
+
+//Switch
+
+func getSeanOpnion_2(on phone: Phone){
+    switch phone{
+    case .iPhone11Pro:
+        print(phone.rawValue)
+    case .iPhoneSE:
+        print(phone.rawValue)
+    case .nokia:
+        print(phone.rawValue)
+    case .pixel:
+        print(phone.rawValue)
+    }
+}
+
+let matchmakingRank = -2540
+
+func determinaPlayerLeague(from rank: Int){
+    switch rank{
+    case 0:
+        print ("Play the game to determine your league")
+    case 1..<50:
+        print ("You are in BRONZE league")
+    case 50..<100:
+        print("You are in SILVER league")
+    case 100..<200:
+        print("You are in GOLD league")
+    default:
+        print("You are in a league of your own. We don't know where you are")
+    }
+}
+
+determinaPlayerLeague(from: matchmakingRank)
+printSeparator()
 
 
