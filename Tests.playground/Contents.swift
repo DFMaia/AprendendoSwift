@@ -124,3 +124,22 @@ for _ in 0..<25 {
 
 print(randomInts)
 print("__________________________________________________________________________________________________________________")
+
+//Enum
+
+enum Phone: String{
+    case iPhone11Pro = "This will be my next phone"
+    case iPhoneSE    = "I dislike this phone size. It makes design hard."
+    case nokia       = "Haedware is great. Android ir ewww"
+    case pixel       = "Can't be broken. Classic"
+}
+
+func getSeanOpnion(on phone: Phone){
+    print(phone.rawValue)
+}
+
+getSeanOpnion(on: .iPhone11Pro)
+
+print("__________________________________________________________________________________________________________________")
+
+
