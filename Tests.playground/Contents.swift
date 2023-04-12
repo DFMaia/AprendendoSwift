@@ -181,4 +181,25 @@ func determinaPlayerLeague(from rank: Int){
 determinaPlayerLeague(from: matchmakingRank)
 printSeparator()
 
+//Optionals
+var agesOptional: [Int] = [21,45,18,71,44,23,17]
+agesOptional.sort()
 
+//if let
+if let oldestAge = agesOptional.last{
+    print ("The oldest age is \(oldestAge)")
+}else{
+    print("There is no oldest age. You must have no students")
+}
+
+//nil coalescing
+let oldestAges = agesOptional.last ?? 999 //If there is no value, it will be 99.
+
+//guard statement
+func getOldestAge(){
+    guard let oldestAge = agesOptional.last else {
+        return //it will return if it is nil
+    }
+    //a lot of code
+    print("The last age is \(agesOptional.last)")
+}
